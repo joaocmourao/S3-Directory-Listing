@@ -1,5 +1,5 @@
 // S3 bucket name
-const bucketName = 's3-directory-listing';
+const bucketName = 'www.pockethole.org';
 const s3Domain = 's3.amazonaws.com';
 
 const objectList = document.getElementById('object-list');
@@ -46,6 +46,7 @@ function createDownloadLink(key) {
 
 function navigateTo(path) {
   currentPath = path;
+  //console.log("current-path = "+path);
   listObjects(currentPath);
 }
 
